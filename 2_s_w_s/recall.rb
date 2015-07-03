@@ -47,6 +47,7 @@ end
 get '/:id/delete' do
   @note = Note.get params[:id]
   @title = "confirm deletion of note ##{params[:id]}"
+  erb :delete
 end
 
 delete '/:id' do

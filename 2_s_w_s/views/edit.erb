@@ -5,7 +5,7 @@
     <input type="checkbox" name="complete" <%= "checked" if @note.complete %>>
     <input type="submit">
   </form>
-  <p><a href=""/<%= @note.id %>/delete">Delete</a></p>
+  <p><a href="/<%= @note.id %>/delete">Delete</a></p>
 <% else %>
   <p>Note not found</p>
 <% end %>
